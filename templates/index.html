@@ -7,18 +7,19 @@
     <h1>Media Converter</h1>
     <p>From Dinesh</p>
 
-    <h2>Convert MP4 to MP3</h2>
+     <h2>Convert MP4 to MP3</h2>
     <form method="POST" action="/convert_mp3" enctype="multipart/form-data">
-        <input type="file" name="video" accept=".mp4" required />
-        <button type="submit">Convert & Download MP3</button>
+        <input type="file" name="video" accept=".mp4" multiple required />
+        <button type="submit">Convert & Download</button>
     </form>
 
     <hr>
 
     <h2>Convert HEIC to JPG</h2>
+    <p>Supports single or multiple HEIC files</p>
     <form method="POST" action="/convert_jpg" enctype="multipart/form-data">
-        <input type="file" name="heic_image" accept=".heic" required />
-        <button type="submit">Convert & Download JPG</button>
+        <input type="file" name="heic_image" accept=".heic" multiple required />
+        <button type="submit">Convert & Download</button>
     </form>
 </body>
 </html>
