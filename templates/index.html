@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MP4 to MP3 Converter</title>
+    <title>Media Converter</title>
 </head>
 <body>
-    <h1>Convert MP4 to MP3</h1>
+    <h1>Media Converter</h1>
     <p>From Dinesh</p>
-    <form method="POST" enctype="multipart/form-data">
+
+    <h2>Convert MP4 to MP3</h2>
+    <form method="POST" action="/convert_mp3" enctype="multipart/form-data">
         <input type="file" name="video" accept=".mp4" required />
-        <button type="submit">Convert & Download</button>
+        <button type="submit">Convert & Download MP3</button>
+    </form>
+
+    <hr>
+
+    <h2>Convert HEIC to JPG</h2>
+    <form method="POST" action="/convert_jpg" enctype="multipart/form-data">
+        <input type="file" name="heic_image" accept=".heic" required />
+        <button type="submit">Convert & Download JPG</button>
     </form>
 </body>
 </html>
